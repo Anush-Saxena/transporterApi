@@ -29,7 +29,6 @@ public class Transporter {
 	//	"^[6-9]\\d{9}$", "(^$|[0-9]{10})"
 	@Pattern(regexp="(^[6-9]\\d{9}$)", message="Please enter a valid mobile number") 
 	private String phoneNo;
-
 	private String transporterName;
 	private String companyName;
 	private String transporterLocation;
