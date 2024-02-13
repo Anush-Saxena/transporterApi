@@ -10,6 +10,9 @@ import org.springframework.web.multipart.MultipartFile;
 import com.springboot.DocumentAPI.Response.DocumentCreateResponse;
 import com.springboot.DocumentAPI.Entities.EntityData;
 import com.springboot.TransporterAPI.Exception.EntityNotFoundException;
+
+import io.swagger.annotations.Api;
+
 import com.springboot.DocumentAPI.Model.AddEntityDoc;
 import com.springboot.DocumentAPI.Model.DocData;
 import com.springboot.DocumentAPI.Model.GetEntityDoc;
@@ -21,6 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @CrossOrigin
 @RestController
+@Api(tags = "Document Service", description = "Everything about documents")
 public class Controller {
 
 	@Autowired

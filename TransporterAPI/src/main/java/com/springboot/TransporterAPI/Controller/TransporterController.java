@@ -16,11 +16,13 @@ import com.springboot.TransporterAPI.Model.PostTransporter;
 import com.springboot.TransporterAPI.Model.UpdateTransporter;
 import com.springboot.TransporterAPI.Services.TransporterService;
 
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @CrossOrigin
 @RestController
+@Api(tags = "Transporter Service", description = "Everything about transporter")
 public class TransporterController {
 
 	@Autowired

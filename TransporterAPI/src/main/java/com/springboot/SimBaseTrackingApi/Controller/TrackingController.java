@@ -13,7 +13,10 @@ import com.springboot.SimBaseTrackingApi.Entity.TrackingEntity;
 import com.springboot.SimBaseTrackingApi.Service.TrackingService;
 import com.springboot.SimBaseTrackingApi.Status.ConsentStatus;
 
+import io.swagger.annotations.Api;
+
 @RestController
+@Api(tags = "Sin based Tracking Service", description = "Service to track using mobile number")
 public class TrackingController {
 
     @Autowired

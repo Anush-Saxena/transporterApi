@@ -7,8 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import com.springboot.EmailSender.Entities.EmailMessage;
 import com.springboot.EmailSender.Service.EmailSenderService;
 
+import io.swagger.annotations.Api;
+
 @CrossOrigin
 @RestController
+@Api(tags = "Email Sender Service", description = "Service to send invite email")
+
 public class EmailController {
 
     private final EmailSenderService emailSenderService;

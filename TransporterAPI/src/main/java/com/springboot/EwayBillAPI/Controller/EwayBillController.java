@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import com.springboot.EwayBillAPI.Entity.EwayBillUsers;
 import com.springboot.EwayBillAPI.Service.EwayBillService;
 
+import io.swagger.annotations.Api;
+
 @RestController
+@Api(tags = "EWay Bill Service", description = "Everything about EWay Bills")
 public class EwayBillController {
     
     @Autowired

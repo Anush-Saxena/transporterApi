@@ -14,11 +14,13 @@ import com.springboot.ShipperAPI.Model.PostShipper;
 import com.springboot.ShipperAPI.Model.UpdateShipper;
 import com.springboot.ShipperAPI.Service.ShipperService;
 
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @CrossOrigin
 @RestController
+@Api(tags = "Shipper Service", description = "Everything about Shipper")
 public class ShipperController {
 
 	@Autowired
